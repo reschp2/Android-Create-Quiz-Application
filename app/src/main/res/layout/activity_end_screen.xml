@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.reschp2.c341assignment32.EndScreenActivity">
+
+    <!--header group-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <!--header group left part-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--title-->
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="@string/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/tv_title"
+                />
+            <!--current question indicator group-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <!--current question indicator part 1-->
+                <TextView
+                    android:id="@+id/tv_questionIndicator1"
+                    android:text="@string/tv_questionIndicator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    style="@style/tv_questionIndicator"
+                    android:visibility="invisible"
+                    />
+                <!--current question indicator num-->
+                <TextView
+                    android:id="@+id/tv_questionNum"
+                    android:text="#"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tv_questionIndicator"
+                    android:visibility="invisible"
+                    />
+                <!--current question indicator part 2-->
+                <TextView
+                    android:id="@+id/tv_questionIndicator2"
+                    android:text="@string/tv_questionIndicator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tv_questionIndicator"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+            <!-- END current question indicator group-->
+        </LinearLayout>
+    </LinearLayout>
+    <!--END header group-->
+
+    <!--Quiz results overview group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_result_indicator1"
+            android:text="@string/tv_result_indicator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_result_indicator"
+            />
+        <TextView
+            android:id="@+id/tv_final_score"
+            android:text="#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_result_indicator"
+            />
+        <TextView
+            android:id="@+id/tv_result_indicator2"
+            android:text="@string/tv_result_indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_result_indicator"
+            />
+    </LinearLayout>
+    <!--END Quiz results overview group-->
+
+    <!--Question 1 result group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_result1"
+            android:src="@drawable/img_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/iv_quizIcon"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_result1"
+            android:text="@string/tv_question_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_questionIndicator"
+            />
+        <TextView
+            android:id="@+id/tv_resultScore1"
+            android:text=" #"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_question_result"
+            />
+    </LinearLayout>
+    <!-- END Question 1 result group-->
+
+    <!--Question 2 result group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_result2"
+            android:src="@drawable/img_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_result2"
+            android:text="@string/tv_question_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_question_result"
+            />
+        <TextView
+            android:id="@+id/tv_resultScore2"
+            android:text=" #"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_question_result"
+            />
+    </LinearLayout>
+    <!--END Question 2 result group-->
+
+    <!--Question 3 result group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_result3"
+            android:src="@drawable/img_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/iv_quizIcon"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_result3"
+            android:text="@string/tv_question_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_questionIndicator"
+            />
+        <TextView
+            android:id="@+id/tv_resultScore3"
+            android:text=" #"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_question_result"
+            />
+    </LinearLayout>
+    <!--END Question 3 result group-->
+
+    <!--Question 4 result group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_result4"
+            android:src="@drawable/img_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/iv_quizIcon"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_result4"
+            android:text="@string/tv_question_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_questionIndicator"
+            />
+        <TextView
+            android:id="@+id/tv_resultScore4"
+            android:text=" #"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_question_result"
+            />
+    </LinearLayout>
+    <!--END Question 4 result group-->
+
+    <!--Question 5 result group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_result5"
+            android:src="@drawable/img_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/iv_quizIcon"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_result5"
+            android:text="@string/tv_question_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_questionIndicator"
+            />
+        <TextView
+            android:id="@+id/tv_resultScore5"
+            android:text=" #"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_question_result"
+            />
+    </LinearLayout>
+    <!--END Question 5 result group-->
+
+
+
+
+</LinearLayout>

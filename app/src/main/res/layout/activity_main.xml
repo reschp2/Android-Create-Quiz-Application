@@ -1,0 +1,162 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context=".MainActivity"
+android:orientation="vertical">
+
+<!--header group-->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <!--header group left part-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--title-->
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/tv_title"
+            />
+        <!--current question indicator group-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!--current question indicator part 1-->
+            <TextView
+                android:id="@+id/tv_questionIndicator1"
+                android:text="@string/tv_questionIndicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                style="@style/tv_questionIndicator"
+                />
+            <!--current question indicator num-->
+            <TextView
+                android:id="@+id/tv_questionNum"
+                android:text="#"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/tv_questionIndicator"
+                />
+            <!--current question indicator part 2-->
+            <TextView
+                android:id="@+id/tv_questionIndicator2"
+                android:text="@string/tv_questionIndicator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/tv_questionIndicator"
+                />
+        </LinearLayout>
+        <!-- END current question indicator group-->
+    </LinearLayout>
+    <!-- END header group left part-->
+    <!--header group right part-->
+    <!--END header group right part-->
+</LinearLayout>
+<!--END header group-->
+
+<!--current question-->
+<TextView
+    android:id="@+id/tv_currentQuestion"
+    android:text="#current question#"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/tv_currQuestion"
+    />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <!--choices group-->
+    <RadioGroup
+        android:id="@+id/radgrp_choices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--choice A rad button-->
+        <RadioButton
+            android:id="@+id/rad_ChoiceA"
+            android:text="#ChoiceA#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rad_choice"
+            />
+        <!--choice B rad button-->
+
+        <RadioButton
+            android:id="@+id/rad_ChoiceB"
+            android:text="#ChoiceB#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rad_choice" />
+        <!--choice C rad button-->
+
+        <RadioButton
+            android:id="@+id/rad_ChoiceC"
+            android:text="#ChoiceC#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rad_choice" />
+
+        <RadioButton
+            android:id="@+id/rad_ChoiceD"
+            android:text="#ChoiceD#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rad_choice"
+            />
+
+        <!--choice D rad button-->
+        <!--END choices group-->
+    </RadioGroup>
+
+</RelativeLayout>
+
+<!--submit button-->
+<Button
+    android:id="@+id/btn_submit"
+    android:text="@string/btn_submit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    style="@style/btn_submit"
+    />
+
+<!--result textview-->
+<TextView
+    android:id="@+id/tv_result"
+    android:text="#result#"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    style="@style/tv_result"
+    />
+
+
+<!--next button-->
+<Button
+    android:id="@+id/btn_next"
+    android:text="@string/btn_next"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/btn_next"
+    />
+
+</LinearLayout>

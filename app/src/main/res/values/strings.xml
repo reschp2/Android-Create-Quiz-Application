@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">c341Assignment8</string>
+
+    <!--strings for welcome screen activity-->
+    <string name="tv_welcome">Welcome To Quiz Creator</string>
+    <string name="tv_instructions">This app allows you to create and test your own 5 question multiple choice quiz.</string>
+    <string name="btn_start">Start</string>
+
+    <!--strings for create quiz screen activity-->
+    <string name="tv_create_title">Create Quiz</string>
+    <string name="tv_current_question_indicator">Create Question </string>
+    <string name="tv_question">Question: </string>
+    <string name="tv_choiceA">Choice A:</string>
+    <string name="tv_choiceB">Choice B:</string>
+    <string name="tv_choiceC">Choice C:</string>
+    <string name="tv_choiceD">Choice D:</string>
+    <string name="tv_correct_choice">Correct Choice: </string>
+    <string name="btn_finished">Finished</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_end_screen">EndScreenActivity</string>
+    <string name="tv_title">QUIZ</string>
+    <string name="tv_questionIndicator1">Question </string>
+    <string name="tv_questionIndicator2"> Of 5:</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_next">Next</string>
+    <string name="tv_final_score">Final Score</string>
+    <string name="tv_result_indicator1">Your final score is </string>
+    <string name="tv_result_indicator2">/5</string>
+    <string name="tv_question_result">The correct answer was </string>
+    <string name="title_activity_create_quiz">CreateQuizActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

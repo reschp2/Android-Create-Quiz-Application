@@ -1,0 +1,94 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--style for title-->
+    <style name="tv_title">
+        <item name="android:textColor">@color/lbl_title_orange</item>
+        <item name="android:textSize">@dimen/tv_title_font</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!--style for question indicator group-->
+    <style name="tv_questionIndicator">
+        <item name="android:textColor">@color/lbl_names_black</item>
+        <item name="android:textSize">@dimen/tv_questionIndicator_font</item>
+        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!--style for quiz icon image-->
+    <style name="iv_quizIcon">
+
+    </style>
+
+    <!--style for tv_currQuestion-->
+    <style name="tv_currQuestion">
+        <item name="android:textColor">@color/lbl_names_black</item>
+        <item name="android:textSize">@dimen/tv_currQuestion_font</item>
+        <item name="android:layout_marginBottom">@dimen/tv_currQuestion_bottomMargin</item>
+    </style>
+
+    <!--style for rad_choice group-->
+    <style name="rad_choice">
+        <item name="android:textColor">@color/lbl_names_black</item>
+        <item name="android:textSize">@dimen/rad_choice</item>
+    </style>
+    <style name="btn_submit">
+        <item name="android:textColor">@color/btn_continue_bloodred</item>
+        <item name="android:textSize">@dimen/btn_next</item>
+    </style>
+
+    <!--style for current question image-->
+    <style name="iv_questionImage">
+        <item name="android:textColor">@color/lbl_title_orange</item>
+        <item name="android:textSize">@dimen/tv_title_font</item>
+        <item name="android:layout_marginTop">@dimen/iv_questionImage_topMargin</item>
+    </style>
+
+    <!--style for tv_result-->
+    <style name="tv_result">
+        <item name="android:textColor">@color/lbl_names_black</item>
+        <item name="android:textSize">@dimen/tv_result</item>
+        <item name="android:layout_marginTop">@dimen/tv_result_topMargin</item>
+    </style>
+
+    <!--style for btn_next-->
+    <style name="btn_next">
+        <item name="android:textColor">@color/btn_continue_bloodred</item>
+        <item name="android:textSize">@dimen/btn_next</item>
+    </style>
+
+    <!--style for tv_result_overview-->
+    <style name="tv_result_indicator">
+        <item name="android:textColor">@color/btn_continue_bloodred</item>
+        <item name="android:textSize">@dimen/btn_next</item>
+    </style>
+
+    <!--style for tv_question_result-->
+    <style name="tv_question_result">
+        <item name="android:textColor">@color/btn_continue_bloodred</item>
+        <item name="android:textSize">@dimen/btn_next</item>
+    </style>
+
+    <!--style for prompts in create quiz activity-->
+    <style name="prompts">
+        <item name="android:textColor">@color/btn_continue_bloodred</item>
+        <item name="android:textSize">@dimen/btn_next</item>
+        <item name="android:layout_marginRight">@dimen/promptsRightMargin</item>
+    </style>
+
+    <!--style for standard text view-->
+    <style name="tv_normal_text_view">
+        <item name="android:textColor">@color/lbl_names_black</item>
+        <item name="android:textSize">@dimen/tv_title_font</item>
+    </style>
+
+    <!--style for standard text view-->
+    <style name="tv_currentQuestionIndicator">
+        <item name="android:textColor">@color/lbl_names_black</item>
+        <item name="android:textSize">@dimen/tv_title_font</item>
+        <item name="android:layout_marginRight">@dimen/currentQuestionIndicatorRightMargin</item>
+    </style>
+</resources>

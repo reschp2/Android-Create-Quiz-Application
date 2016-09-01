@@ -1,0 +1,243 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+        <!--title-->
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/tv_create_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/tv_title"
+            />
+
+            <!--current question indicator-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--current question indicator-->
+                <TextView
+                    android:id="@+id/tv_currentQuestion"
+                    android:text="@string/tv_current_question_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/tv_currentQuestionIndicator"
+                    />
+                <!--current question number-->
+                <TextView
+                    android:id="@+id/tv_currentQuestionNumber"
+                    android:text="#"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/tv_normal_text_view"
+                    />
+            </LinearLayout>
+
+            <!--enter question for current question-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--current question-->
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:text="@string/tv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/prompts"
+                    />
+                <!--current question number-->
+                <EditText
+                    android:id="@+id/et_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/tv_normal_text_view"
+                    />
+            </LinearLayout>
+
+            <!--enter choice A for current question-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--prompt-->
+                <TextView
+                    android:id="@+id/tv_choiceA"
+                    android:text="@string/tv_choiceA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/prompts"
+                    />
+                <!--edit text-->
+                <EditText
+                    android:id="@+id/et_choiceA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/tv_normal_text_view"
+                    />
+            </LinearLayout>
+
+            <!--enter choice B for current question-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--prompt-->
+                <TextView
+                    android:id="@+id/tv_choiceB"
+                    android:text="@string/tv_choiceB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/prompts"
+                    />
+                <!--edit text-->
+                <EditText
+                    android:id="@+id/et_choiceB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/tv_normal_text_view"
+                    />
+            </LinearLayout>
+
+            <!--enter choice C for current question-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--prompt-->
+                <TextView
+                    android:id="@+id/tv_choiceC"
+                    android:text="@string/tv_choiceC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/prompts"
+                    />
+                <!--edit text-->
+                <EditText
+                    android:id="@+id/et_choiceC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/tv_normal_text_view"
+                    />
+            </LinearLayout>
+
+            <!--enter choice D for current question-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <!--prompt-->
+                <TextView
+                    android:id="@+id/tv_choiceD"
+                    android:text="@string/tv_choiceD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/prompts"
+                    />
+                <!--edit text-->
+                <EditText
+                    android:id="@+id/et_choiceD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/tv_normal_text_view"
+                    />
+            </LinearLayout>
+        <!--prompt-->
+        <TextView
+            android:id="@+id/tv_correctAnswer"
+            android:text="@string/tv_correct_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            style="@style/prompts"
+            />
+            <!--choices group-->
+            <RadioGroup
+                android:id="@+id/rg_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <!--choice A rad button-->
+                <RadioButton
+                    android:id="@+id/rad_ChoiceA"
+                    android:text="@string/tv_choiceA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/rad_choice"
+                    />
+                <!--choice B rad button-->
+
+                <RadioButton
+                    android:id="@+id/rad_ChoiceB"
+                    android:text="@string/tv_choiceB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/rad_choice" />
+                <!--choice C rad button-->
+
+                <RadioButton
+                    android:id="@+id/rad_ChoiceC"
+                    android:text="@string/tv_choiceC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/rad_choice" />
+
+                <RadioButton
+                    android:id="@+id/rad_ChoiceD"
+                    android:text="@string/tv_choiceD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/rad_choice"
+                    />
+
+                <!--choice D rad button-->
+                <!--END choices group-->
+            </RadioGroup>
+
+                <!--next button-->
+                <Button
+                    android:id="@+id/btn_next"
+                    android:text="@string/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/btn_submit"
+                    />
+        </LinearLayout>
+
+</ScrollView>
